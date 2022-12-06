@@ -3,9 +3,11 @@
 
 provider "aws" {
     region = "eu-west-1"
-    access_key = "AKIAUAMP23ITAXFZ7O5U"
-    secret_key = "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"
+    shared_config_files      = ["/Users/tf_user/.aws/conf"]
+    shared_credentials_files = ["/Users/tf_user/.aws/creds"]
+    profile                  = "customprofile"
 }   
+
 
 
 #resource "resourceName" "MyName" {
